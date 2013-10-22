@@ -75,8 +75,8 @@ int main(int argc, char **argv) {
     total_time = ((end_time.tv_sec - start_time.tv_sec) * 1000000LL + end_time.tv_usec - start_time.tv_usec) / 1000;
 
 	// Imprime o cabeçalho do arquivo pbm e a matriz.
-	//printf("P1\n #Serial\n %d %d\n", n, n);
-    //matrix_print(M);
+	printf("P1\n #Serial\n %d %d\n", n, n);
+    matrix_print(M);
 
 	// Cria um arquivo e grava o tempo de execução.
     FILE *file = fopen("estatistica.txt", "a+");
